@@ -14,6 +14,18 @@ let
 tamanhoSenha = 8
 numeroSenha.textContent = tamanhoSenha;
 
+const checkbox = document.querySelectorAll('.checkbox')
+
+for (let i = 0; i  < checkbox.length; i++) {
+    checkbox [i].onclick = geraSenha;
+    
+}
+
+// checkbox [0] = Maiusculas 
+// checkbox [1] = Minusculas
+// checkbox [2] = Numeros
+// checkbox [3] = Simbolo
+
 const botoes = document.querySelectorAll(".parametro-senha__botao")
 
 botoes[0].onclick = diminuir;
@@ -32,4 +44,5 @@ function aumentar() {
     tamanhoSenha++;
     numeroSenha.textContent = tamanhoSenha
     
+    function geraSenha()
 }
